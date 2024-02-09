@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="getData()">
+    <div id="box">
+       <input id="search" class="text" type="text"  value="Deoghar" onchange="getData()">
+       <div>
+        <h1 class="temp" id="temp"></h1>
+         <p class="cel">Degree Celcius</p>
+         <p class="wsh">Wind Speed :- <span id="wind"></span></p>
+         <p class="wsh">Humidity :- <span id="hum"></span></p>
+       </div>
+       <div id="img">
+        <img src="weather.png" alt="" width="300px">
+       </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
